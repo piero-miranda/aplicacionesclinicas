@@ -1,0 +1,11 @@
+FROM ubuntu:20.04
+LABEL maintainer="inefable12@gmail.com"
+
+# arguments
+ARG NAME=gromacs512_linux_x86-64_Ubuntu20.04.6LTS
+
+USER root
+WORKDIR /home/matilda/35_docker
+
+RUN echo 'Bienvenid@'
+CMD [ "tail", "-f", "/dev/null"]
