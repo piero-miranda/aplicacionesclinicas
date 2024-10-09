@@ -42,3 +42,15 @@ Puede utilizar administradores de paquetes basados en GUI y en línea de comando
 
 # Clase 2
 
+PRIMERA PARTE
+
+1. Evaluación oral
+2. Actualización de los proyectos desde el Supercomputador
+3. Ejecución de aplicación
+
+SEGUNDA PARTE
+
+4. Docker: Exposiciones grupales
+5. Demo en supercomputador
+6. Aplicación a los proyectos
+
