@@ -1,3 +1,5 @@
+# Clase 1
+
 Tema 01: Creación de GNU/Linux y su impacto actual
 https://acsigrupo1-historia.streamlit.app/
 
@@ -15,3 +17,6 @@ https://acsi24-xkm98hfvs62nwrhhspehnb.streamlit.app/
 
 Tema 07: Introducción a la Supercomputación (HPC)
 https://acseistreamex.streamlit.app/
+
+# Clase 2
+
