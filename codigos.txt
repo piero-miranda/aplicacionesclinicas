@@ -1,0 +1,444 @@
+#########################
+##### Primer Grupo ###### Creación de GNU/Linux y su impacto actual
+#########################
+
+import streamlit as st
+
+def main():
+    # Título
+    st.title("Exposición: Creación de GNU/Linux y su impacto actual")
+
+    # Sección 1: Origen de GNU/Linux
+    st.header("1. Creación de GNU/Linux")
+    st.write("""
+    GNU/Linux es un sistema operativo libre y de código abierto que surgió de la combinación del proyecto GNU, iniciado por Richard Stallman en 1983, y el kernel Linux, desarrollado por Linus Torvalds en 1991. El objetivo principal del proyecto GNU era crear un sistema operativo completamente libre, y la llegada del kernel Linux fue crucial para completar este objetivo. La comunidad de desarrolladores alrededor de ambos proyectos creció exponencialmente, llevando a la creación de diversas distribuciones de GNU/Linux.
+    """)
+
+    # Sección 2: Eventos destacados en la historia de GNU/Linux
+    st.header("2. Eventos destacados")
+    st.write("""
+    Algunos de los eventos más importantes en la evolución de GNU/Linux incluyen:
+    
+    - **1991**: Linus Torvalds publica la primera versión del kernel Linux.
+    - **1993**: Nacen las primeras distribuciones populares como Slackware y Debian.
+    - **2004**: Se lanza Ubuntu, que democratiza el uso de GNU/Linux para usuarios no técnicos.
+    - **2012**: GNU/Linux se convierte en el sistema dominante en servidores y plataformas en la nube.
+    """)
+
+    # Sección 3: Intervención en tecnologías actuales
+    st.header("3. Intervención en tecnologías actuales")
+    st.write("""
+    Hoy en día, GNU/Linux juega un papel central en muchas áreas tecnológicas:
+    
+    - **Servidores**: Más del 90% de los servidores en la web funcionan con distribuciones de Linux debido a su estabilidad y seguridad.
+    - **Supercomputación**: Los 500 superordenadores más potentes del mundo usan Linux.
+    - **Desarrollo de software**: Herramientas como Docker y Kubernetes, que son esenciales en la infraestructura de software moderna, están construidas sobre GNU/Linux.
+    - **IoT y dispositivos embebidos**: Muchas tecnologías IoT utilizan Linux como sistema operativo base debido a su flexibilidad y capacidad de personalización.
+    """)
+
+    # Conclusión
+    st.header("Conclusión")
+    st.write("""
+    GNU/Linux ha sido fundamental en la transformación tecnológica que hemos vivido en las últimas décadas. Su modelo de código abierto ha fomentado la innovación y la colaboración global, siendo ahora una parte integral de sistemas críticos en todas partes del mundo, desde servidores hasta supercomputadoras y dispositivos embebidos.
+    """)
+
+if __name__ == "__main__":
+    main()
+
+#########################
+##### Segundo Grupo ##### ¿Por qué usar Linux en Ingeniería Biomédica?
+#########################
+
+import streamlit as st
+
+# Título de la aplicación
+st.title("¿Por qué usar Linux en Ingeniería Biomédica?")
+
+# Introducción
+st.write("""
+Linux es un sistema operativo de código abierto que ha ganado mucha popularidad en el mundo de la ingeniería biomédica.
+A continuación, te explicamos por qué es una herramienta esencial en este campo y cómo puede mejorar el desarrollo de aplicaciones biomédicas.
+""")
+
+# Beneficios de usar Linux en Ingeniería Biomédica
+st.subheader("Beneficios de Linux en Ingeniería Biomédica")
+
+st.write("""
+1. **Código abierto y gratuito**: Linux es totalmente gratuito y su código está disponible para todos, lo que permite adaptarlo según las necesidades de los proyectos biomédicos. Esto es crucial para el desarrollo de nuevas tecnologías en salud.
+   
+2. **Alta seguridad**: En el sector biomédico, los datos son muy sensibles. Linux es conocido por ser uno de los sistemas operativos más seguros, lo que garantiza la protección de la información de los pacientes y los sistemas críticos de salud.
+
+3. **Estabilidad y confiabilidad**: Muchos dispositivos y sistemas médicos necesitan funcionar de manera continua y sin errores. Linux es famoso por su estabilidad y es comúnmente utilizado en servidores y entornos críticos.
+
+4. **Gran compatibilidad con software científico**: Linux es compatible con herramientas y lenguajes de programación populares en ingeniería biomédica, como Python, MATLAB, R, y plataformas de simulación. Esto facilita el análisis de datos biomédicos y el procesamiento de imágenes médicas.
+
+5. **Computación de alto rendimiento**: Para aplicaciones que requieren mucho procesamiento, como la simulación de órganos o el análisis de grandes cantidades de datos de pacientes, Linux es ideal porque puede aprovechar sistemas de computación de alto rendimiento.
+""")
+
+# Conclusión
+st.subheader("Conclusión")
+st.write("""
+Linux es una excelente opción para los ingenieros biomédicos, no solo por su flexibilidad y seguridad, sino porque también permite trabajar de manera más eficiente y económica en la creación de dispositivos médicos y software de análisis. 
+Aprender a usar Linux puede ser un gran paso para mejorar el desarrollo de tecnologías en el ámbito de la salud.
+""")
+
+#########################
+##### Tercer Grupo ###### CUDA y GPU
+#########################
+
+import streamlit as st
+
+presentationData = [
+    {
+        "title": "Introducción a CUDA y GPU",
+        "content": [
+            "CUDA (Compute Unified Device Architecture): Plataforma de computación paralela de NVIDIA",
+            "GPU (Unidad de Procesamiento Gráfico): Hardware especializado para procesamiento paralelo",
+            "CUDA permite a los desarrolladores usar GPU para cómputo de propósito general",
+            "Ventajas del cómputo en GPU vs CPU: Mayor paralelismo y rendimiento en ciertas tareas"
+        ]
+    },
+    {
+        "title": "Componentes clave de hardware",
+        "content": [
+            "GPU compatibles con CUDA: Principalmente tarjetas NVIDIA (series GeForce, Quadro, Tesla)",
+            "Arquitectura de GPU: Miles de núcleos pequeños para procesamiento paralelo",
+            "Memoria de GPU: Alta velocidad, crucial para el rendimiento en cómputo",
+            "Interconexión CPU-GPU: PCIe para transferencia de datos",
+            "Requerimientos mínimos: Tarjeta NVIDIA compatible, suficiente RAM y PSU adecuada"
+        ]
+    },
+    {
+        "title": "Instalación y configuración",
+        "content": [
+            "Drivers de NVIDIA: Necesarios para la comunicación básica con la GPU",
+            "CUDA Toolkit: SDK y runtime para desarrollo y ejecución de aplicaciones CUDA",
+            "Pasos de instalación:",
+            "1. Instalar los drivers de NVIDIA más recientes",
+            "2. Descargar e instalar CUDA Toolkit del sitio de NVIDIA",
+            "3. Configurar variables de entorno (PATH, LD_LIBRARY_PATH)",
+            "4. Verificar la instalación con comandos como nvcc --version y deviceQuery"
+        ]
+    },
+    {
+        "title": "Librerías asociadas importantes",
+        "content": [
+            "cuDNN (CUDA Deep Neural Network library): Optimizada para deep learning",
+            "NCCL (NVIDIA Collective Communications Library): Para comunicación multi-GPU eficiente",
+            "cuBLAS: Implementación de BLAS (Basic Linear Algebra Subprograms) para GPU",
+            "TensorRT: Para optimización de inferencia en deep learning",
+            "OpenCV-GPU: Versión acelerada por GPU de la biblioteca de visión por computadora",
+            "Thrust: Biblioteca de algoritmos paralelos similar a la STL de C++"
+        ]
+    },
+    {
+        "title": "Consideraciones de hardware",
+        "content": [
+            "Memoria de la GPU: Crucial para el rendimiento, determina el tamaño máximo de datos procesables",
+            "Ancho de banda de memoria: Afecta la velocidad de transferencia de datos",
+            "Número de núcleos CUDA: Impacta directamente en la capacidad de procesamiento paralelo",
+            "Potencia de la fuente de alimentación: GPUs de alto rendimiento requieren PSUs potentes",
+            "Refrigeración: Las GPUs generan mucho calor, es importante una buena refrigeración",
+            "Compatibilidad de la placa base: Verificar soporte para múltiples GPUs si es necesario"
+        ]
+    },
+    {
+        "title": "Aplicaciones comunes",
+        "content": [
+            "Aprendizaje profundo y machine learning: Entrenamiento e inferencia de redes neuronales",
+            "Procesamiento de imágenes y video: Renderizado, codificación/decodificación, filtros",
+            "Simulaciones científicas: Dinámica de fluidos, modelado climático, física de partículas",
+            "Criptografía y minería de criptomonedas",
+            "Análisis de big data y computación de alto rendimiento",
+            "Renderizado en tiempo real para videojuegos y realidad virtual"
+        ]
+    },
+    {
+        "title": "Conclusión y perspectivas futuras",
+        "content": [
+            "CUDA y las GPUs han revolucionado el cómputo de alto rendimiento",
+            "Continuo desarrollo de arquitecturas GPU más potentes y eficientes",
+            "Tendencia hacia la integración más estrecha de CPU y GPU",
+            "Creciente importancia en IA, análisis de datos y computación científica",
+            "Desafíos: Consumo de energía, programación paralela compleja",
+            "Futuro: GPUs más especializadas, mejor soporte para precisión mixta y AI"
+        ]
+    }
+]
+
+st.title("CUDA y GPU: Presentación")
+
+slide = st.select_slider(
+    "Selecciona una diapositiva",
+    options=range(len(presentationData)),
+    format_func=lambda x: f"Slide {x+1}: {presentationData[x]['title']}"
+)
+
+current_slide = presentationData[slide]
+st.header(current_slide["title"])
+for point in current_slide["content"]:
+    st.markdown(f"• {point}")
+
+# Botones de navegación
+col1, col2, col3 = st.columns(3)
+with col1:
+    if slide > 0:
+        if st.button("⬅️ Anterior"):
+            slide -= 1
+with col3:
+    if slide < len(presentationData) - 1:
+        if st.button("Siguiente ➡️"):
+            slide += 1
+
+# Barra de progreso
+st.progress((slide + 1) / len(presentationData))
+
+#########################
+##### Cuarto Grupo ###### Comparación de Sistemas Operativos: Linux, Windows y macOS
+#########################
+
+import streamlit as st
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Título de la aplicación
+st.title("Comparación de Sistemas Operativos: Linux, Windows y macOS")
+
+# Introducción
+st.header("Introducción")
+st.write("""
+Esta aplicación compara tres sistemas operativos principales: **Linux**, **Windows**, y **macOS**. 
+""")
+
+# Selección de secciones
+st.sidebar.title("Menú Interactivo")
+opcion = st.sidebar.selectbox("Selecciona una sección", 
+                              ("Introducción", "Estructura y Filosofía", 
+                               "Interfaz de Usuario", "Gestión de GPU", 
+                               "Soporte de Software", "Comunidad y Soporte", 
+                               "Gráficos Interactivos"))
+
+# Estructura y Filosofía
+if opcion == "Estructura y Filosofía":
+    st.header("1. Estructura y Filosofía")
+    data = {
+        'Aspecto': ['Licencia', 'Kernel', 'Usuarios', 'Sistema de Archivos'],
+        'Linux': ['Open Source', 'Basado en Unix (Kernel Linux)', 'Desarrolladores, servidores', 'ext4, Btrfs, ZFS'],
+        'Windows': ['Propietario', 'Basado en NT (Kernel propio)', 'Hogares, empresas, juegos', 'NTFS'],
+        'macOS': ['Propietario', 'Basado en Unix', 'Diseño gráfico, multimedia', 'APFS']
+    }
+    df = pd.DataFrame(data)
+    st.table(df)
+
+# Interfaz de Usuario
+elif opcion == "Interfaz de Usuario":
+    st.header("2. Interfaz de Usuario")
+    st.write("""
+    - **Linux**: Variedad de entornos de escritorio (GNOME, KDE, XFCE) que permiten personalización completa.
+    - **Windows**: Un único entorno con barra de tareas y menú de inicio. Amplio uso de GUI.
+    - **macOS**: Interfaz gráfica coherente y simple, popular entre los usuarios de productos Apple.
+    """)
+    st.image("https://i.ytimg.com/vi/n0vJ-AEL1es/maxresdefault.jpg", caption="Entorno de Escritorio GNOME en Linux", use_column_width=True)
+
+# Gestión de GPU
+elif opcion == "Gestión de GPU":
+    st.header("3. Gestión de GPU")
+    st.write("""
+    Comparación de la gestión de GPUs entre los sistemas operativos.
+    """)
+    # Datos para el gráfico de GPU
+    gpu_data = {
+        'Sistemas Operativos': ['Linux', 'Windows', 'macOS'],
+        'Soporte Manual de GPU (NVIDIA/AMD)': [8, 9, 5],
+        'Optimización para Computación Científica': [9, 7, 4],
+        'Facilidad de Integración con eGPU': [6, 8, 9]
+    }
+    df_gpu = pd.DataFrame(gpu_data)
+    
+    # Crear gráfico de barras
+    fig, ax = plt.subplots()
+    df_gpu.set_index('Sistemas Operativos').plot(kind='bar', ax=ax)
+    ax.set_ylabel('Puntuación (0-10)')
+    ax.set_title('Comparación de Soporte de GPU por Sistema Operativo')
+    st.pyplot(fig)
+
+# Soporte de Software y Usos Especializados
+elif opcion == "Soporte de Software":
+    st.header("4. Soporte de Software y Usos Especializados")
+    st.write("""
+    - **Linux**: Popular para servidores, desarrollo de software y computación científica.
+    - **Windows**: Más utilizado en hogares, empresas y juegos, con una amplia compatibilidad de software.
+    - **macOS**: Enfocado en diseño gráfico, producción multimedia y usuarios del ecosistema Apple.
+    """)
+
+    # Muestra de tabla comparativa
+    data_software = {
+        'Aspecto': ['Desarrollo de Software', 'Gaming', 'Diseño Multimedia'],
+        'Linux': ['Muy fuerte', 'Limitado', 'Moderado'],
+        'Windows': ['Moderado', 'Muy fuerte', 'Moderado'],
+        'macOS': ['Moderado', 'Limitado', 'Muy fuerte']
+    }
+    df_software = pd.DataFrame(data_software)
+    st.table(df_software)
+
+# Comunidad y Soporte
+elif opcion == "Comunidad y Soporte":
+    st.header("5. Comunidad y Soporte")
+    st.write("""
+    - **Linux**: Comunidad muy activa y global, soporte a través de foros y documentación abierta.
+    - **Windows**: Soporte comercial por parte de Microsoft, amplia comunidad en línea.
+    - **macOS**: Soporte oficial de Apple a través de AppleCare, pero con una comunidad más pequeña comparada con Linux.
+    """)
+    st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2mJHtt39VBbSf7YCjw-Gh7sjOhe_gwcU0Iw&s", caption="Logotipo de Windows",width=600, use_column_width=True)
+
+# Gráficos Interactivos
+elif opcion == "Gráficos Interactivos":
+    st.header("6. Gráficos Interactivos")
+
+    # Datos para el gráfico interactivo
+    os_data = {
+        'Sistemas Operativos': ['Linux', 'Windows', 'macOS'],
+        'Seguridad': [9, 6, 8],
+        'Facilidad de Uso': [6, 9, 8],
+        'Personalización': [10, 7, 5],
+        'Compatibilidad de Software': [7, 10, 7]
+    }
+    df_os = pd.DataFrame(os_data)
+
+    # Selección interactiva
+    metric = st.selectbox('Selecciona la métrica para comparar:', 
+                          ('Seguridad', 'Facilidad de Uso', 'Personalización', 'Compatibilidad de Software'))
+
+    # Gráfico
+    fig, ax = plt.subplots()
+    df_os.plot(x='Sistemas Operativos', y=metric, kind='bar', ax=ax, color='skyblue')
+    ax.set_title(f'Comparación de {metric}')
+    st.pyplot(fig)
+
+#########################
+##### Quinto Grupo ###### Introducción a la Supercomputación (HPC)
+#########################
+
+import streamlit as st
+
+# Título principal de la aplicación
+st.title("Introducción a la Supercomputación (HPC)")
+
+# Sección 1: ¿Qué es la Supercomputación?
+st.header("¿Qué es la Supercomputación?")
+st.write("""
+La **supercomputación** se refiere al uso de supercomputadoras, que son sistemas extremadamente potentes, capaces de realizar cálculos a velocidades inmensamente superiores a las computadoras convencionales. 
+Esto permite resolver problemas complejos en diversas áreas, como:
+- Simulaciones científicas
+- Modelado climático
+- Genómica
+- Predicción del tiempo y más.
+""")
+
+# Sección 2: Recursos para HPC
+st.header("Recursos para HPC")
+st.subheader("1. Procesadores de Alto Rendimiento (CPU/GPU)")
+st.write("""
+La clave de la supercomputación está en los procesadores optimizados para realizar tareas masivas en paralelo:
+- **CPU (Unidades de Procesamiento Central)**: Procesan las tareas generales.
+- **GPU (Unidades de Procesamiento Gráfico)**: Son capaces de manejar grandes volúmenes de operaciones paralelas, ideales para simulaciones y procesamiento de datos masivo.
+""")
+
+st.subheader("2. Sistemas de Archivos Paralelos")
+st.write("""
+El almacenamiento y acceso a datos es fundamental. Los **sistemas de archivos paralelos**, como **Lustre** o **GPFS**, permiten que múltiples nodos de una supercomputadora accedan a archivos simultáneamente, mejorando la eficiencia del procesamiento.
+""")
+
+st.subheader("3. Redes de Baja Latencia")
+st.write("""
+La velocidad de las redes que interconectan los nodos de una supercomputadora es crucial. Las redes de baja latencia, como **InfiniBand**, permiten una comunicación más rápida entre los diferentes componentes, minimizando los tiempos de espera y optimizando el rendimiento general.
+""")
+
+# Sección 3: Comandos para Administración de Servidores
+st.header("Comandos para Administración de Servidores")
+st.write("""
+Para administrar los sistemas HPC, los siguientes comandos de Linux son útiles:
+""")
+
+st.code("""
+# Monitorea procesos activos
+top            
+
+# Monitorea procesos de forma interactiva con más opciones
+htop           
+
+# Muestra el uso de disco de forma humanamente legible
+df -h          
+
+# Muestra el estado de la memoria
+free -h        
+
+# Verifica el uso de la red
+ifconfig       
+""")
+
+# Sección 4: Distribuciones Linux para HPC
+st.header("Distribuciones Linux Comunes para HPC")
+st.write("""
+En entornos HPC, se prefieren ciertas distribuciones Linux que son robustas, estables y optimizadas para tareas intensivas. Algunas de las más comunes incluyen:
+""")
+
+st.subheader("1. CentOS")
+st.write("""
+CentOS es popular en clusters HPC debido a su estabilidad y compatibilidad con software especializado de supercomputación. Es una opción gratuita derivada de Red Hat Enterprise Linux (RHEL).
+""")
+
+st.subheader("2. Ubuntu Server")
+st.write("""
+Ubuntu Server es otra opción muy usada por su facilidad de uso y la gran comunidad que lo respalda. También ofrece compatibilidad con muchos paquetes de software científicos y de simulación.
+""")
+
+st.subheader("3. SUSE Linux Enterprise Server (SLES)")
+st.write("""
+SLES es una distribución empresarial utilizada en varios supercomputadores del mundo. Es conocida por su rendimiento y soporte especializado para HPC, especialmente en ambientes empresariales.
+""")
+
+# Sección 5: ¿Es posible utilizar una HPC en Windows?
+st.header("¿Es posible utilizar una HPC en Windows?")
+st.write("""
+Aunque la mayoría de los entornos HPC están optimizados para sistemas basados en Linux, es posible utilizar HPC en **Windows** a través de herramientas específicas como:
+- **Windows Subsystem for Linux (WSL)**: Permite ejecutar un entorno Linux dentro de Windows, facilitando el acceso a herramientas comunes en HPC.
+- **Microsoft HPC Pack**: Un conjunto de herramientas para implementar y gestionar clusters de alto rendimiento en sistemas Windows.
+- **Azure para HPC**: Microsoft ofrece soluciones de HPC en la nube a través de su plataforma Azure, que es compatible tanto con Windows como con Linux.
+
+Sin embargo, la comunidad científica y empresarial que utiliza supercomputación sigue prefiriendo distribuciones Linux debido a su flexibilidad, rendimiento y compatibilidad con las bibliotecas y frameworks HPC.
+""")
+
+# Sección 6: Diferencias Técnicas entre HPC y Computadores Convencionales
+st.header("Diferencias Técnicas entre HPC y Computadores Convencionales")
+st.write("""
+Aunque ambos sistemas pueden parecer similares a simple vista, existen diferencias fundamentales entre un sistema de **High-Performance Computing (HPC)** y un computador convencional:
+
+1. **Capacidad de procesamiento paralela**:
+   - Los sistemas HPC están diseñados para ejecutar cálculos en paralelo, con múltiples procesadores (CPU y GPU) trabajando simultáneamente en diferentes partes de un problema.
+   - Los computadores convencionales están optimizados para tareas secuenciales, lo que limita su capacidad de ejecutar múltiples tareas pesadas al mismo tiempo.
+
+2. **Estructura de hardware**:
+   - Un sistema HPC puede estar compuesto por miles de nodos, cada uno con múltiples núcleos de procesamiento, lo que permite manejar enormes cantidades de datos en paralelo.
+   - Un computador convencional generalmente tiene un solo nodo con unos pocos núcleos (normalmente entre 4 y 16).
+
+3. **Redes de baja latencia**:
+   - Los sistemas HPC dependen de redes de interconexión de alta velocidad y baja latencia (por ejemplo, **InfiniBand**), que permiten la rápida transferencia de datos entre los nodos.
+   - En los computadores convencionales, la comunicación entre componentes no está tan optimizada y suele ser más lenta.
+
+4. **Sistemas de archivos**:
+   - Los sistemas HPC utilizan **sistemas de archivos paralelos** como **Lustre** o **GPFS**, que permiten a muchos nodos acceder y escribir en archivos simultáneamente sin cuellos de botella.
+   - En un computador convencional, los sistemas de archivos son mucho más simples y no están diseñados para acceder a archivos a gran escala de manera paralela.
+
+5. **Uso de energía y enfriamiento**:
+   - Los sistemas HPC consumen una gran cantidad de energía y requieren sistemas avanzados de enfriamiento para evitar el sobrecalentamiento.
+   - Un computador convencional tiene requisitos mucho menores en cuanto a energía y enfriamiento.
+
+6. **Optimización del software**:
+   - El software utilizado en HPC está optimizado para aprovechar las arquitecturas paralelas y puede estar diseñado para ejecutarse en múltiples nodos simultáneamente.
+   - En los computadores convencionales, el software no suele estar optimizado para entornos paralelos y distribuidos, limitando su rendimiento en tareas de gran envergadura.
+""")
+
+#########################
+##### Sexto Grupo ######
+#########################
